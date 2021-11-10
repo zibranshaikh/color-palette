@@ -29,7 +29,7 @@ In the project directory, you can run:
 
 - If you hover it shades below, so there is a `Copy` icon visible.
 
-- If you click
+- If you click on `Copy` icon to copy the exact Hex-code for that color
 
 - Click the `Reset` button to use it again and generate new shades.
 
