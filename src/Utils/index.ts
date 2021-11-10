@@ -1,7 +1,9 @@
 import hexRgb from "hex-rgb";
 import rgbHex from "rgb-hex";
 
-const colorShadeGenerator = (color: string) => {
+const regexPatternForHex = /^[0-9A-F]{6}$/i;
+
+export const getColorShades = (color: string): Array<string> => {
   const colorInRGB = hexRgb(color, { format: "array" });
   const max = Math.max(
     Math.max(colorInRGB[0], Math.max(colorInRGB[1], colorInRGB[2])),
@@ -15,8 +17,15 @@ const colorShadeGenerator = (color: string) => {
       Math.trunc(colorInRGB[1] * step * i),
       Math.trunc(colorInRGB[2] * step * i),
     ];
-    colorPallete.push(value);
+    colorPallete.push(rgbHex(value.toString()));
   }
+  return colorPallete;
 };
 
-export default colorShadeGenerator;
+export const checkHexCode = (hex: string): boolean => {
+  return regexPatternForHex.test(hex)
+};
+
+export const copyFunction = (text: string): void => {
+  navigator.clipboard.writeText(text);
+};
