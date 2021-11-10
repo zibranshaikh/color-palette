@@ -1,0 +1,9 @@
+.inputText {
+    -webkit-appearance: none !important;
+    background: #ececec;
+    border: 0;
+    border-left: 0px;
+    outline: none;
+    height: 25px;
+    width: 100%;
+  }
