@@ -1,4 +1,4 @@
-# Color Pallete
+## Color Palette Assignment Details:
 
 Color plays one of the most important roles in the design of Stack. It is not only the expression of style, but rather it’s used to communicate the meaning.
 
@@ -8,22 +8,26 @@ In the upcoming version of Stack, users will be able to personalize their Spaces
 
 In order to achieve consistency in the design, we would like to create a library that generates various color palettes based on the input colors.(such as background color, accent color, etc)
 
+## Follow Below Instructions to Run Color Palette App:
+
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm install`
+### `npm install` or `yarn install`
 
 - Install all the dependcies for the app.
 
-### `npm start`
+### `npm start` or `yarn start`
 
 - Runs the app in the development mode.\
   Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 - Enter the `Background` and `Accent` HEX code into the input field.
 
-- Click the `Generate Shades` button to generate the all shaded for background and accent as well below.
+- You need to add HEX code in both input fields to enable `Generate Shades` button.
+
+- Click the `Generate Shades` button to generate the all shaded for background and accent.
 
 - The 10 different shades are generated from dark to light for background and accent.
 
@@ -33,8 +37,15 @@ In the project directory, you can run:
 
 - Click the `Reset` button to use it again and generate new shades.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- App also works in responsive mode with proper alignments.
+
+- App does not have any redux/context & routing because app is too small.
+
+### Known Issues:
+- When you go to the shades for copy the hex code you will not recongnise is code copied or not. So for that we need to integrate some functionality by that user can understand if the code copied. 
+
+- When you go the dark shades the copy icon on hover is not getting displayed properly. For that we need to add some styles to display copy icon propely on dark shades.
+
 
 ### `npm run test`
 
@@ -50,43 +61,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
