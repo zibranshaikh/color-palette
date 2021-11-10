@@ -1,4 +1,6 @@
+import Home from "../Pages/Home";
+
 const App = () => {
-  return <div>UI for color pallete generator.</div>;
+  return <Home />;
 };
 export default App;

@@ -15,8 +15,9 @@ const colorShadeGenerator = (color: string) => {
       Math.trunc(colorInRGB[1] * step * i),
       Math.trunc(colorInRGB[2] * step * i),
     ];
-    colorPallete.push(value);
+    colorPallete.push(rgbHex(value.toString()));
   }
+  return colorPallete;
 };
 
 export default colorShadeGenerator;
