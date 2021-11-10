@@ -23,7 +23,7 @@ export const getColorShades = (color: string): Array<string> => {
 };
 
 export const checkHexCode = (hex: string): boolean => {
-  return regexPatternForHex.test(hex)
+  return regexPatternForHex.test(hex);
 };
 
 export const copyFunction = (text: string): void => {
